@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Joke from "./Joke";
+import "./JokeList.css";
 
 class JokeList extends Component {
   static defaultProps = { jokesToGet: 10 };
@@ -61,7 +62,8 @@ class JokeList extends Component {
 
     return (
       <div className="JokeList">
-        <button className="JokeList-getmore" onClick={this.generateNewJokes}>
+        <button className="JokeList-getmore" 
+        onClick={this.generateNewJokes}>
           Get New Jokes
         </button>
 
